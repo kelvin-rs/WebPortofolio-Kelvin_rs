@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Kelvin Rohmat Setiaji - IoT, Full-Stack & Embedded Systems Developer. Mahasiswa D4 Teknik Telekomunikasi Politeknik Elektronika Negeri Surabaya (PENS).">
+    <title>Kelvin Rohmat Setiaji | Portofolio</title>
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="kmipn-theme">
+
+    <!-- Header / Navigation Bar -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <div class="brand-name">
+                Kelvin Rohmat Setiaji
+            </div>
+            <nav class="nav-menu">
+                <a href="#hero" class="menu-link active">Tentang</a>
+                <a href="#skills" class="menu-link">Keterampilan</a>
+                <a href="#experience" class="menu-link">Pengalaman</a>
+                <a href="#projects" class="menu-link">Proyek</a>
+                <a href="#certificates" class="menu-link">Sertifikasi</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+        
+        <!-- Hero Section: KMIPN 2026 Style -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-grid">
+                    <!-- Left Hero Content -->
+                    <div class="hero-content">
+                        <span class="hero-welcome">Selamat Datang di Portofolio Saya!</span>
+                        <h1 class="hero-title">Halo Semuanya, Saya <span class="text-gold">Kelvin Rohmat Setiaji</span></h1>
+                        <p class="hero-subtitle">IoT, Full-Stack &amp; Embedded Systems Developer</p>
+                        <p class="hero-description" id="typewriter-text">
+                            Saya adalah mahasiswa Sarjana Terapan Teknik Telekomunikasi di PENS yang mengintegrasikan dunia nirkabel, sistem tertanam, dan arsitektur web modern untuk membangun solusi digital yang berorientasi dampak.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="assets/resource/CV Kelvin Teknis.pdf" download class="btn btn-primary">
+                                <i class="fa-solid fa-file-invoice"></i> Unduh CV
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fa-solid fa-phone"></i> Hubungi Saya
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Profile Frame (Mascot position in KMIPN) -->
+                    <div class="hero-profile-area">
+                        <div class="profile-frame">
+                            <img src="assets/resource/profile.png" alt="Kelvin Rohmat Setiaji" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Flowing Water Animated Waves at bottom (KMIPN style) -->
+            <div class="hero-waves-container">
+                <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use href="#gentle-wave" x="48" y="0" fill="rgba(250, 250, 250, 0.7)" />
+                        <use href="#gentle-wave" x="48" y="3" fill="rgba(250, 250, 250, 0.5)" />
+                        <use href="#gentle-wave" x="48" y="5" fill="rgba(250, 250, 250, 0.3)" />
+                        <use href="#gentle-wave" x="48" y="7" fill="#fafafa" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Keterampilan (Skills) Section -->
+        <section id="skills" class="section-wrapper scroll-margin">
+            <h2 class="section-title">Keterampilan &amp; Tech Stack</h2>
+            <div class="skills-dashboard">
+                <!-- Group 1: Programming Languages -->
+                <div class="skill-category-card" data-skill-cat="languages">
+                    <h3 class="card-header-title"><i class="fa-solid fa-code text-red"></i> Bahasa Pemrograman</h3>
+                    <div class="card-body-content flex-column gap-15">
+                        <div class="skill-meter-item" data-skill="PHP">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">PHP (Laravel, Yii2)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-red" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-meter-item" data-skill="JavaScript">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">JavaScript & TypeScript</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-red" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-meter-item" data-skill="C++">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">C / C++ (Arduino, STM32)</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-red" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-meter-item" data-skill="Python">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">Python (Data/AI, MicroPython)</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-red" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-meter-item" data-skill="Go">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">Golang (Backend APIs)</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-red" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-meter-item" data-skill="Java">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage">72%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-red" style="width: 72%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Web Frameworks & Backend / Databases -->
+                <div class="skill-category-card" data-skill-cat="frameworks">
+                    <h3 class="card-header-title"><i class="fa-solid fa-server text-purple"></i> Web Framework &amp; Database</h3>
+                    <div class="card-body-content flex-column gap-15">
+                        <div class="skill-meter-item">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">Next.js & React</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-purple" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">NestJS & Node.js</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-purple" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">Laravel & AdonisJS</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-purple" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">MySQL & PostgreSQL</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-purple" style="width: 82%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3: IoT, Mobile, Embedded & Hardware -->
+                <div class="skill-category-card" data-skill-cat="iot">
+                    <h3 class="card-header-title"><i class="fa-solid fa-microchip text-gold"></i> Mobile, Embedded &amp; Hardware</h3>
+                    <div class="card-body-content flex-column gap-15">
+                        <div class="skill-meter-item">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">ESP32 / Arduino / Microcontrollers</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-gold" style="width: 92%"></div></div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">React Native & Flutter</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-gold" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">Dasar Elektronika & PCB Design</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-gold" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="meter-meta flex-between">
+                                <span class="skill-name">RTL-SDR & Radio Telecommunication</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="meter-bar"><div class="meter-fill bg-gold" style="width: 78%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Log Aktivitas (Experience & Education) -->
+        <section id="experience" class="section-wrapper scroll-margin">
+            <h2 class="section-title">Pengalaman &amp; Pendidikan</h2>
+            
+            <!-- Timeline Tabs -->
+            <div class="timeline-tabs-container">
+                <button class="tab-btn active" id="btn-tab-exp" onclick="switchTimelineTab('exp')">
+                    <i class="fa-solid fa-briefcase"></i> Pengalaman Kerja &amp; Organisasi
+                </button>
+                <button class="tab-btn" id="btn-tab-edu" onclick="switchTimelineTab('edu')">
+                    <i class="fa-solid fa-graduation-cap"></i> Pendidikan Akademik
+                </button>
+            </div>
+
+            <!-- Experience Track -->
+            <div id="timeline-exp" class="timeline-track active">
+                <!-- Exp Item 1 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-abmas')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-users-viewfinder"></i> Pengabdian Masyarakat (Prodi Telekomunikasi)</span>
+                        <span class="timeline-time badge">April 2026 – Sekarang</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-red">Full Stack Web Developer</h4>
+                        <p class="timeline-desc">
+                            Membangun sistem portal pemasaran terpadu berbasis web untuk Kelompok Tani (Poktan) Banyu Urip guna mempermudah akses pemasaran produk dan memperluas distribusi secara digital.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 2 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-penelitian')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-satellite-dish"></i> Penelitian Lokal</span>
+                        <span class="timeline-time badge">Februari 2026 – Sekarang</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-gold">Embedded Systems &amp; Web Developer</h4>
+                        <p class="timeline-desc">
+                            Mengembangkan infrastruktur website pemetaan data transmisi Automatic Identification System (AIS) berbasis RTL-SDR receiver untuk menangkap koordinat sinyal kapal laut dan divisualisasikan real-time.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">RTL-SDR</span>
+                            <span class="tech-tag">Leaflet JS</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 3 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-etrans')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-car"></i> UKM E-Trans PENS</span>
+                        <span class="timeline-time badge">Februari 2026 – Juni 2026</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-gold">Robotics &amp; IoT Engineer</h4>
+                        <p class="timeline-desc">
+                            Merancang dan mengimplementasikan modul kendali nirkabel serta perakitan mekanik untuk Robot Mobil RC (Radio Controlled) dengan latensi kontrol minimal berbasis ESP32.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">C++ (Arduino)</span>
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">PCB Layout</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 4 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-earo')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-plane"></i> EEPIS AIRPLANE ROBOT (EARO)</span>
+                        <span class="timeline-time badge">Mei 2025 – Desember 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-gold">Programming Division</h4>
+                        <p class="timeline-desc">
+                            Mengembangkan sistem kendali penerbangan otonom untuk UAV (Unmanned Aerial Vehicle) dan konfigurasi telemetri komunikasi jarak jauh EARO.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">ArduPilot / Pixhawk</span>
+                            <span class="tech-tag">UAV Programming</span>
+                            <span class="tech-tag">Telemetry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 5 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-dies-natalis')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-cake-candles"></i> Panitia Dies Natalis PENS ke-37</span>
+                        <span class="timeline-time badge">Agustus 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-gold">Staff Operasional (Perkab)</h4>
+                        <p class="timeline-desc">
+                            Mengelola operasional perlengkapan, logistik, penyediaan peralatan, dan persiapan teknis panggung untuk seluruh rangkaian kegiatan Dies Natalis PENS ke-37.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">Logistics</span>
+                            <span class="tech-tag">Equipment Management</span>
+                            <span class="tech-tag">Operational Support</span>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Exp Item 6 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-fpc')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-trophy"></i> Panitia Final Project Competition (FPC)</span>
+                        <span class="timeline-time badge">Juli 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-gold">Staff Operasional (Perkab)</h4>
+                        <p class="timeline-desc">
+                            Menyiapkan sarana prasarana, perlengkapan stand kompetisi, tata ruang pameran, serta distribusi logistik bagi peserta dan juri Final Project Competition.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">Logistics</span>
+                            <span class="tech-tag">Event Setup</span>
+                            <span class="tech-tag">Operational Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 7 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-roboholic')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-robot"></i> UKM Roboholic PENS</span>
+                        <span class="timeline-time badge">Februari 2025 – Juni 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-gold">Hardware &amp; Control Programmer</h4>
+                        <p class="timeline-desc">
+                            Mendesain algoritma PID controller presisi tinggi untuk Robot Line Follower otomatis, meningkatkan akurasi pembacaan sensor photodioda, dan mempercepat respons pergerakan motor DC.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">C/C++</span>
+                            <span class="tech-tag">PID Controller</span>
+                            <span class="tech-tag">Photodiode Sensors</span>
+                            <span class="tech-tag">STM32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 8 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-javatekno')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-building"></i> CV. Javatekno Mitra Solusi</span>
+                        <span class="timeline-time badge">Desember 2024 – Maret 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-red">Frontend Web Developer (Internship)</h4>
+                        <p class="timeline-desc">
+                            Mengembangkan arsitektur antarmuka (Frontend) untuk aplikasi web E-Procurement berskala enterprise untuk SILOG Group demi efisiensi pengadaan barang secara digital.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                            <span class="tech-tag">RESTful API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 9 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-smk')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-code"></i> SMKN 1 Jenangan</span>
+                        <span class="timeline-time badge">Januari 2024 – Maret 2024</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-purple">Full Stack Developer</h4>
+                        <p class="timeline-desc">
+                            Membangun sistem "E-Legalisir Digital" untuk mempermudah alumni dalam legalisasi berkas secara online, serta merancang platform "Sistem Manajemen Inventaris Barang Aset" untuk efisiensi audit inventaris di setiap laboratorium sekolah.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">PHP (Laravel)</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 10 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-promedia')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-building-shield"></i> PT. Promedia Citra Informatindo</span>
+                        <span class="timeline-time badge">Januari 2023 – Juni 2023</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-purple">Mobile &amp; Web Developer (Internship)</h4>
+                        <p class="timeline-desc">
+                            Mengembangkan dan meluncurkan sistem E-Commerce terintegrasi untuk UMKM Kota Batu dalam bentuk website & aplikasi mobile. Berkontribusi aktif pula pada tim developer utama dalam membangun website resmi kompetisi KMIPN-V (Kompetisi Mahasiswa Informatika Politeknik Nasional).
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Yii2</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp Item 11 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('exp-gandini')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-users"></i> Gandini Dev Community</span>
+                        <span class="timeline-time badge">September 2021 – Februari 2024</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-red">Active Member &amp; Speaker</h4>
+                        <p class="timeline-desc">
+                            Menjadi partisipan aktif komunitas sejak 2021 dalam diskusi coding dan project sharing, serta naik menjadi Pemateri Komunitas (2023-2024) membawakan materi seputar pemrograman web dasar.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">Community Speaker</span>
+                            <span class="tech-tag">Web Basics</span>
+                            <span class="tech-tag">Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Education Track -->
+            <div id="timeline-edu" class="timeline-track">
+                <!-- Edu Item 1 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('edu-pens')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-graduation-cap"></i> Politeknik Elektronika Negeri Surabaya (PENS)</span>
+                        <span class="timeline-time badge">2024 - Sekarang</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-red">D4 Teknik Telekomunikasi</h4>
+                        <p class="timeline-desc">
+                            Mendalami rekayasa sistem transmisi nirkabel, jaringan komputer, pemrosesan sinyal digital, mikrokontroler canggih, radio telecommunication (RF), serta integrasi IoT. Aktif berpartisipasi dalam UKM Robotika & Riset.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">Telecommunication Systems</span>
+                            <span class="tech-tag">Computer Networks</span>
+                            <span class="tech-tag">Signal Processing</span>
+                            <span class="tech-tag">Advanced Microcontrollers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edu Item 2 -->
+                <div class="timeline-item clickable-timeline" onclick="openTimelineModal('edu-smk')">
+                    <div class="timeline-dot-connector"></div>
+                    <div class="timeline-header flex-between flex-wrap gap-10">
+                        <span class="timeline-org"><i class="fa-solid fa-school"></i> SMK Negeri 1 Jenangan</span>
+                        <span class="timeline-time badge">2021 - 2024</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-role text-purple">Rekayasa Perangkat Lunak (RPL)</h4>
+                        <p class="timeline-desc">
+                            Dasar-dasar rekayasa perangkat lunak, perancangan basis data relasional, pemrograman orientasi objek (OOP), pemrograman web statis/dinamis, pengembangan aplikasi desktop, dan mobile.
+                        </p>
+                        <div class="timeline-tech-tags">
+                            <span class="tech-tag">Software Engineering Basics</span>
+                            <span class="tech-tag">OOP &amp; Algorithms</span>
+                            <span class="tech-tag">Databases</span>
+                            <span class="tech-tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-wrapper scroll-margin">
+            <h2 class="section-title">Repositori Proyek</h2>
+            
+            <!-- Project Filters -->
+            <div class="filters-container">
+                <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+                <button class="filter-btn" data-filter="iot">IoT &amp; Embedded</button>
+                <button class="filter-btn" data-filter="web">Aplikasi Web</button>
+                <button class="filter-btn" data-filter="mobile">Aplikasi Mobile</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 12: Pengabdian Masyarakat - E-Commerce Tani -->
+                <div class="project-card card" data-category="web">
+                    <div class="project-image-box">
+                        <img src="assets/project/Pengabdian Masyarakat.jpeg" alt="Portal E-Commerce Tani Banyu Urip" onerror="this.src='https://via.placeholder.com/600x400?text=Portal+E-Commerce+Tani'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">WEB PLATFORM / PENGMAS</span>
+                            <span class="status-indicator active">Aktif</span>
+                        </div>
+                        <h3 class="project-title">Portal E-Commerce Tani</h3>
+                        <p class="project-summary">
+                            Website e-commerce terintegrasi untuk mendigitalisasi alur pemasaran hasil tani Poktan Banyu Urip dengan dashboard inventaris real-time.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Next.js</span>
+                            <span>PostgreSQL</span>
+                            <span>TailwindCSS</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/e-tani-banyu-urip" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('abmas')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: KMIPN VIII - Smart IoT Incubator -->
+                <div class="project-card card" data-category="iot">
+                    <div class="project-image-box">
+                        <img src="assets/project/VIREON-KMIPN2026.jpeg" alt="KMIPN VIII Smart Incubator" onerror="this.src='https://via.placeholder.com/600x400?text=KMIPN+Smart+Incubator'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">IOT / COMPETITION</span>
+                            <span class="status-indicator active">In Progress</span>
+                        </div>
+                        <h3 class="project-title">KMIPN VIII Smart Incubator</h3>
+                        <p class="project-summary">
+                            Pengembangan model inkubator presisi budidaya hortikultura untuk ajang KMIPN VIII Cabang Piranti Cerdas, dilengkapi sensor MQTT.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Raspberry Pi</span>
+                            <span>AI Edge</span>
+                            <span>MQTT</span>
+                            <span>React Native</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/kmipn-smart-incubator" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('kmipn')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1: AIS SDR -->
+                <div class="project-card card" data-category="iot web">
+                    <div class="project-image-box">
+                        <img src="assets/project/Penelitian-Lokal.jpeg" alt="AIS SDR Vessel Mapping" onerror="this.src='https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=600&auto=format&fit=crop&q=60'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">IOT / TELEKOMUNIKASI</span>
+                            <span class="status-indicator active">Aktif</span>
+                        </div>
+                        <h3 class="project-title">AIS SDR Vessel Mapping</h3>
+                        <p class="project-summary">
+                            Sistem pemetaan data transmisi Automatic Identification System (AIS) real-time menggunakan antena penangkap frekuensi RTL-SDR dan visualisasi koordinat kapal di peta interaktif.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>RTL-SDR</span>
+                            <span>LeafletJS</span>
+                            <span>WebSockets</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/ais-sdr-mapping" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('ais-sdr')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: ESP32 RC Mobile Robot -->
+                <div class="project-card card" data-category="iot">
+                    <div class="project-image-box">
+                        <img src="assets/project/MobilRC1.jpeg" alt="ESP32 RC Mobile Robot" onerror="this.src='https://via.placeholder.com/600x400?text=ESP32+RC+Robot'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">ROBOTIKA / IOT</span>
+                            <span class="status-indicator active">Selesai</span>
+                        </div>
+                        <h3 class="project-title">ESP32 RC Mobile Robot</h3>
+                        <p class="project-summary">
+                            Perancangan sasis mekanik dan transmisi sinyal remot kontrol berbasis protokol nirkabel ESP-NOW 2.4GHz dengan latensi respons mendekati nol.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>C++ (Arduino)</span>
+                            <span>ESP32</span>
+                            <span>ESP-NOW</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/esp32-rc-car" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('rc-car')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: AI Face Recognition Attendance -->
+                <div class="project-card card" data-category="iot web">
+                    <div class="project-image-box">
+                        <img src="assets/project/Face.png" alt="AI Face Recognition Smart Attendance" onerror="this.src='https://via.placeholder.com/600x400?text=Face+Recognition+Attendance'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">AI / EMBEDDED</span>
+                            <span class="status-indicator active">Selesai</span>
+                        </div>
+                        <h3 class="project-title">AI Face Rec Smart Attendance</h3>
+                        <p class="project-summary">
+                            Alat pencatatan presensi siswa otomatis di kelas menggunakan pengolahan citra OpenCV pada modul kamera mini Raspberry Pi 4.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Raspberry Pi</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/ai-face-attendance" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('face-rec')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>  
+
+                <!-- Project 7: IoT Smart Home & Weather Monitoring -->
+                <div class="project-card card" data-category="iot web">
+                    <div class="project-image-box">
+                        <img src="assets/project/Smart-Home.png" alt="IoT Smart Home" onerror="this.src='https://via.placeholder.com/600x400?text=IoT+Smart+Home'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">IOT / HOME AUTOMATION</span>
+                            <span class="status-indicator active">Selesai</span>
+                        </div>
+                        <h3 class="project-title">IoT Smart Home &amp; Weather</h3>
+                        <p class="project-summary">
+                            Sistem otomasi saklar listrik nirkabel dan dasbor pemantauan kelembaban/suhu ruangan real-time berbasis ESP32 dan Firebase database.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>ESP32</span>
+                            <span>Firebase RTDB</span>
+                            <span>Next.js</span>
+                            <span>DHT11</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/iot-smart-home" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('smart-home')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Line Follower PID Robot -->
+                <div class="project-card card" data-category="iot">
+                    <div class="project-image-box">
+                        <img src="assets/project/Roboholic.jpeg" alt="Line Follower PID Robot" onerror="this.src='https://via.placeholder.com/600x400?text=Line+Follower+Robot'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">ROBOTIKA / KONTROL</span>
+                            <span class="status-indicator active">Selesai</span>
+                        </div>
+                        <h3 class="project-title">Line Follower PID Robot</h3>
+                        <p class="project-summary">
+                            Pemrograman robot penjejak garis otomatis berbasis STM32 dengan implementasi umpan balik PID controller untuk akurasi manuver tikungan tajam.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>C++</span>
+                            <span>STM32</span>
+                            <span>PID Logic</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/line-follower-pid" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('line-follower')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: E-Procurement SILOG -->
+                <div class="project-card card" data-category="web">
+                    <div class="project-image-box">
+                        <img src="assets/project/Silog.png" alt="E-Procurement SILOG" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=60'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">WEB PLATFORM</span>
+                            <span class="status-indicator active">Deployed</span>
+                        </div>
+                        <h3 class="project-title">E-Procurement SILOG Group</h3>
+                        <p class="project-summary">
+                            Pengembangan frontend modul pengadaan barang digital berskala korporat, mengoptimalkan proses approval berkas, kalkulasi vendor, dan pelacakan status pengiriman logistik.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>React.js</span>
+                            <span>Next.js</span>
+                            <span>TailwindCSS</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/e-procurement-silog" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('e-proc')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: E-Legalisir & Inventaris Lab -->
+                <div class="project-card card" data-category="web">
+                    <div class="project-image-box">
+                        <img src="assets/project/Maintenance.jpg" alt="E-Legalisir &amp; Inventaris Lab" onerror="this.src='https://via.placeholder.com/600x400?text=E-Legalisir+Portal'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">APLIKASI WEB</span>
+                            <span class="status-indicator active">Deployed</span>
+                        </div>
+                        <h3 class="project-title">E-Legalisir &amp; Inventaris Lab</h3>
+                        <p class="project-summary">
+                            Dua platform terpisah berbasis Laravel untuk efisiensi administrasi tanda tangan digital ijazah alumni online dan audit data aset lab di SMKN 1 Jenangan.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/e-legalisir-inventaris" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('school-sys')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Project 4: UMKM Batu E-Commerce -->
+                <div class="project-card card" data-category="web mobile">
+                    <div class="project-image-box">
+                        <img src="" alt="UMKM Batu E-Commerce" onerror="this.src='https://via.placeholder.com/600x400?text=UMKM+Batu+E-Commerce'">
+                    </div>
+                    <div class="project-info-body flex-column gap-10">
+                        <div class="flex-between flex-align-center">
+                            <span class="project-category">WEB &amp; MOBILE</span>
+                            <span class="status-indicator active">Deployed</span>
+                        </div>
+                        <h3 class="project-title">UMKM Batu E-Commerce </h3>
+                        <p class="project-summary">
+                            Aplikasi penjualan produk-produk lokal khas Kota Batu. Platform web e-commerce berbasis Laravel dan aplikasi mobile React Native konsumen.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>React Native</span>
+                            <span>Laravel</span>
+                            <span>Yii2</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/kelvinrohmat/umkm-batu-ecommerce" target="_blank" class="project-git-link">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn-project-detail" onclick="openProjectModal('umkm-batu')">Rincian Proyek <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sertifikat & Pelatihan Section -->
+        <section id="certificates" class="section-wrapper scroll-margin">
+            <h2 class="section-title">Sertifikasi &amp; Pelatihan</h2>
+            
+            <div class="cert-grid">
+                 <!-- Cert 7: Cisco F-ANA (2026) -->
+                <div class="cert-card card" onclick="openCertModal('Fundamental of Associate Network Administrator (F-ANA)', '(F-ANA) Fundamental of Associate Network Administrator - DEX - Politeknik Elektronika Negeri Surabaya.pdf', 'DEX / Politeknik Elektronika Negeri Surabaya', '2026', 'Sertifikasi kompetensi jaringan komputer, routing, switching, dan administrasi link infrastruktur jaringan nirkabel/kabel.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/(F-ANA) Fundamental of Associate Network Administrator - DEX - Politeknik Elektronika Negeri Surabaya.png" alt="Cisco F-ANA" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">DEX / PENS &bull; 2026</div>
+                            <a href="assets/Sertifikat/(F-ANA) Fundamental of Associate Network Administrator - DEX - Politeknik Elektronika Negeri Surabaya.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">Fundamental Network Administrator</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 8: Workshop PMW (2026) -->
+                <div class="cert-card card" onclick="openCertModal('Workshop Program Mahasiswa Wirausaha (PMW)', 'Workshop PMW.pdf', 'Hima Telkom', '2026', 'Pelatihan perencanaan bisnis, inovasi model usaha, dan manajemen keuangan operasional startup wirausaha mahasiswa.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/Workshop PMW.png" alt="Workshop PMW" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">PENS &bull; 2026</div>
+                            <a href="assets/Sertifikat/Workshop PMW.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">Workshop Wirausaha (PMW)</h3>
+                    </div>
+                </div>
+
+                 <!-- Cert 9: National Essay Competition (2026) -->
+                <div class="cert-card card" onclick="openCertModal('Sertifikat National Essay Competition', 'Essay Competition.pdf', 'Panitia Kompetisi Esai', '2026', 'Penghargaan atas partisipasi aktif dalam ajang kompetisi menulis karya esai ilmiah nasional tingkat mahasiswa.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/Essay Competition.png" alt="Essay Competition" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">KOMPETISI ESAI &bull; 2026</div>
+                            <a href="assets/Sertifikat/Essay Competition.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">National Essay Competition</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 1: Dicoding AI (2026) -->
+                <div class="cert-card card" onclick="openCertModal('Dicoding AI Praktis untuk Produktifitas (2026)', 'Dicoding AI Praktis untuk Produktifitas.pdf', 'Dicoding Indonesia', '2026', 'Pelatihan optimasi alur kerja menggunakan kecerdasan buatan (Generative AI) untuk efisiensi produktivitas tugas pemrograman dan riset.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/Dicoding AI Praktis untuk Produktifitas.png" alt="Dicoding AI" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">DICODING INDONESIA &bull; 2026</div>
+                            <a href="assets/Sertifikat/Dicoding AI Praktis untuk Produktifitas.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">AI Praktis untuk Produktifitas</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 2: Samsung SIC 7 (2025) -->
+                <div class="cert-card card" onclick="openCertModal('Samsung Innovation Campus Batch 7', 'SIC 7 Stage 1.pdf', 'Samsung Electronics', '2025', 'Program pelatihan intensif bersertifikat resmi berskala global yang melingkupi kurikulum IoT, Coding, programming dasar sirkuit, dan AI.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/SIC 7.png" alt="Samsung SIC" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">SAMSUNG &bull; 2025</div>
+                            <a href="assets/Sertifikat/SIC 7 Stage 1.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">Samsung Innovation Campus</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 3: Dies Natalis PENS (2025) -->
+                <div class="cert-card card" onclick="openCertModal('Panitia Dies Natalis PENS ke-37', 'Dies Natalis PENS 2025.pdf', 'Politeknik Elektronika Negeri Surabaya', '2025', 'Penghargaan atas partisipasi aktif sebagai panitia pendukung teknis dan IT Support pada Dies Natalis PENS ke-37.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/Dies Natalis PENS-37.png" alt="Dies Natalis PENS" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">PENS &bull; 2025</div>
+                            <a href="assets/Sertifikat/Dies Natalis PENS 2025.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">Dies Natalis PENS ke-37</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 4: FPC PENS (2025) -->
+                <div class="cert-card card" onclick="openCertModal('Sertifikat Panitia Final Project Competition', 'FPC-Pens.pdf', 'Politeknik Elektronika Negeri Surabaya', '2025', 'Penghargaan atas kinerja kepanitiaan dalam menyukseskan program Final Project Competition mahasiswa tingkat akhir.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/FPC.png" alt="FPC PENS" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">PENS &bull; 2025</div>
+                            <a href="assets/Sertifikat/FPC-Pens.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">Final Project Competition</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 10: LKMM-TD (2025) -->
+                <div class="cert-card card" onclick="openCertModal('Sertifikat Pelatihan LKMM-TD PENS', 'LKMM-TD.pdf', 'Politeknik Elektronika Negeri Surabaya', '2025', 'Pelatihan kepemimpinan dan manajemen mahasiswa tingkat dasar untuk mengasah softskill keorganisasian.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/LKMM-TD.png" alt="LKMM-TD PENS" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">PENS &bull; 2025</div>
+                            <a href="assets/Sertifikat/LKMM-TD.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">LKMM-TD PENS</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 11: LKMM Pra-TD (2024) -->
+                <div class="cert-card card" onclick="openCertModal('LKMM Pra-TD PENS', 'LKMM Pra-TD.pdf', 'Politeknik Elektronika Negeri Surabaya', '2024', 'Sertifikat pelatihan manajemen mahasiswa tingkat pra-dasar untuk penguatan softskill kepemimpinan dan manajemen diri.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/LKMM Pra-TD.png" alt="LKMM Pra-TD" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">PENS &bull; 2024</div>
+                            <a href="assets/Sertifikat/LKMM Pra-TD.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">LKMM Pra-TD PENS</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 5: ILITS (2024) -->
+                <div class="cert-card card" onclick="openCertModal('Sertifikat Workshop ILITS', 'ILITS.pdf', 'Institut Teknologi Sepuluh Nopember', '2024', 'Sertifikat apresiasi keikutsertaan atau penyelesaian tahapan pada rangkaian workshop ILITS.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/ILITS.png" alt="ILITS" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">ITS &bull; 2024</div>
+                            <a href="assets/Sertifikat/ILITS.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">ILITS</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 12: Gamelab (2023) -->
+                <div class="cert-card card" onclick="openCertModal('Gamelab PHP Web Programming', 'gamelab_certificate.pdf', 'Gamelab Indonesia', '2023', 'Pelatihan pemrograman web dinamis dasar dan logika pemrograman berorientasi objek dengan framework PHP.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/gamelab_certificate.png" alt="Gamelab PHP" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">GAMELAB INDONESIA &bull; 2023</div>
+                            <a href="assets/Sertifikat/gamelab_certificate.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">Online Webinar Programming</h3>
+                    </div>
+                </div>
+
+                <!-- Cert 6: NLC ITS (2022) -->
+                <div class="cert-card card" onclick="openCertModal('Sertifikat National Logic Competition', 'NLC ITS.pdf', 'Institut Teknologi Sepuluh Nopember', '2022', 'Sertifikat apresiasi keikutsertaan pada ajang kompetisi logika nasional tingkat mahasiswa.')">
+                    <div class="cert-image-box">
+                        <img src="assets/Sertifikat/NLC ITS.png" alt="NLC ITS" onerror="this.src='https://via.placeholder.com/400x250?text=Sertifikat'">
+                    </div>
+                    <div class="cert-info-body">
+                        <div class="cert-header">
+                            <div class="cert-issuer">ITS &bull; 2022</div>
+                            <a href="assets/Sertifikat/NLC ITS.pdf" download onclick="event.stopPropagation()" class="cert-download-link" title="Unduh Sertifikat"><i class="fa-solid fa-file-arrow-down"></i> Unduh</a>
+                        </div>
+                        <h3 class="cert-name">National Logic Competition</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak & Alamat Section -->
+        <section id="contact" class="section-wrapper scroll-margin">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-grid">
+                <!-- Left: Contact Details -->
+                <div class="contact-details-panel card">
+                    <h3 class="card-header-title">Saluran Komunikasi</h3>
+                    <div class="card-body-content flex-column gap-25">
+                        <p class="endpoint-intro">
+                            Silakan hubungi saya untuk kolaborasi proyek, diskusi teknis, atau kesempatan kerja melalui kontak berikut:
+                        </p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <span class="label">Alamat Email</span>
+                                <a href="mailto:kelvinrohmatsetiaji@gmail.com" class="value">kelvinrohmatsetiaji@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-text">
+                                <span class="label">Nomor Telepon</span>
+                                <a href="tel:082141560213" class="value">0821-4156-0213</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-map-pin"></i></div>
+                            <div class="contact-text">
+                                <span class="label">Lokasi Domisili</span>
+                                <span class="value">Jambon, Ponorogo, Jawa Timur, Indonesia</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Nodes -->
+                        <div class="social-nodes-container">
+                            <span class="social-label">Media Sosial</span>
+                            <div class="flex-align-center gap-15">
+                                <a href="https://github.com" target="_blank" class="social-node-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" class="social-node-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://instagram.com" target="_blank" class="social-node-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form-panel card">
+                    <h3 class="card-header-title">Kirimkan Pesan</h3>
+                    <form class="card-body-content contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label for="form-name" class="form-label">Nama Lengkap</label>
+                                <input type="text" id="form-name" class="form-input" placeholder="Masukkan nama Anda..." required>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label for="form-email" class="form-label">Alamat Email</label>
+                                <input type="email" id="form-email" class="form-input" placeholder="alamat@domain.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject" class="form-label">Subjek Pesan</label>
+                            <input type="text" id="form-subject" class="form-input" placeholder="Subjek pesan..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Isi Pesan</label>
+                            <textarea id="form-message" class="form-input" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary full-width">
+                                Kirim Pesan <i class="fa-solid fa-paper-plane btn-icon"></i>
+                            </button>
+                        </div>
+                        <div class="form-status-area" id="form-status">
+                            <!-- Status messages will appear here -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <span class="copy-text">&copy; 2026 Kelvin Rohmat Setiaji.</span>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Details -->
+    <div class="modal-overlay" id="global-modal" onclick="closeModal()">
+        <div class="modal-card card" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <span class="modal-header-title" id="modal-title">Rincian Informasi</span>
+                <button class="close-btn" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body-content" id="modal-content">
+                <!-- Dynamic Content Loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- App Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
