@@ -140,42 +140,67 @@ function initProjectFilters() {
 // ==========================================================================
 const projectDatabase = {
     'abmas': {
-        title: 'Portal E-Commerce Tani Banyu Urip',
+        title: 'Website Profil & Pemasaran Melon Honey Poktan Banyu Urip',
         client: 'Pengabdian Masyarakat PENS',
         duration: 'April 2026 - Sekarang',
-        tech: ['Next.js', 'PostgreSQL', 'TailwindCSS', 'RESTful API'],
-        images: ['assets/project/Pengabdian Masyarakat.jpeg'],
+        tech: ['Next.js', 'Supabase', 'TailwindCSS'],
+        images: [
+            'assets/project/Pengmas-beranda.png',
+            'assets/project/Pengmas-Katalog.png',
+            'assets/project/Pengmas-Budidaya.png',
+            'assets/project/Pengmas-Tentang kami.png'
+        ],
         desc: `
-            <p style="margin-bottom:15px;">Portal web e-commerce terintegrasi untuk mendigitalisasi alur pemasaran hasil pertanian Kelompok Tani (Poktan) Banyu Urip.</p>
-            <p style="margin-bottom:15px;">Saya merancang backend menggunakan RESTful API dan database relasional PostgreSQL, serta mengimplementasikan dashboard administrasi bagi petani untuk mengelola inventaris produk dan memantau status pesanan masuk secara real-time.</p>
+            <p style="margin-bottom:15px;">Website profil kelompok tani dan platform pemasaran digital terpadu untuk memperkenalkan profil kelompok tani serta mendigitalisasi alur pemasaran produk unggulan budidaya Melon Honey Kelompok Tani (Poktan) Banyu Urip.</p>
+            <p style="margin-bottom:15px;">Saya merancang dan mengintegrasikan arsitektur database cloud menggunakan Supabase untuk mengelola katalog produk, informasi budidaya tani, serta pengelolaan data produk dan pemesanan secara real-time.</p>
             <ul style="padding-left:20px; color:var(--text-muted); font-size:0.88rem; display:flex; flex-direction:column; gap:8px;">
-                <li>Meningkatkan efisiensi pemasaran produk pertanian lokal.</li>
-                <li>Visualisasi grafik penjualan dan laporan rekap transaksi otomatis.</li>
-                <li>Antarmuka ramah pengguna (Mobile-responsive) untuk kenyamanan petani.</li>
+                <li>Menyediakan profil interaktif serta informasi edukasi budidaya Melon Honey Poktan Banyu Urip.</li>
+                <li>Digitalisasi katalog produk pertanian untuk memperluas jangkauan pemasaran dan pembeli.</li>
+                <li>Integrasi database cloud andal dan terstruktur dengan Supabase.</li>
+                <li>Antarmuka modern dan responsif (Mobile-friendly) untuk kenyamanan pengunjung dan petani.</li>
             </ul>
         `
     },
     'ais-sdr': {
-        title: 'AIS SDR Vessel Mapping Portal',
-        client: 'Riset Penelitian Lokal Kampus PENS',
-        duration: 'Februari 2026 - Sekarang',
-        tech: ['Python', 'RTL-SDR RF Hardware', 'Leaflet JS', 'WebSockets', 'Next.js', 'MySQL'],
-        images: ['assets/project/dirgan.jpeg'],
+        title: 'Low-Cost AIS Vessel Tracking System for Real-Time Web Visualization',
+        client: 'Hibah Penelitian Lokal PENS – Jurnal ECOTIPE (Vol. 13 No. 2, 2026)',
+        duration: 'Februari 2026 – Sekarang',
+        tech: ['RTL-SDR V4', 'Raspberry Pi 3 B+', 'C Language (GMSK/NRZI/CRC16)', 'MariaDB', 'Leaflet.js', 'VHF Maritime Radio'],
+        images: [
+            'assets/project/AIS.jpeg',
+            'assets/project/AIS4.jpeg',
+            'assets/project/AIS3.jpeg',
+            'assets/project/AIS1.jpeg',
+            'assets/project/AIS2.jpeg'
+        ],
         desc: `
-            <p style="margin-bottom:15px;">Sistem ini dikembangkan untuk menangkap transmisi data navigasi otomatis (Automatic Identification System) kapal laut secara mandiri menggunakan radio telemetry receiver RTL-SDR.</p>
-            <p style="margin-bottom:15px;">Sinyal RF yang ditangkap di frekuensi 161.975 MHz & 162.025 MHz di-demodulasi dengan script Python, didekodekan menjadi format data koordinat, dan dikirimkan secara konstan menggunakan WebSockets untuk digambar real-time di atas peta antarmuka website berbasis Leaflet JS.</p>
+            <p style="margin-bottom:15px;">Sistem pemantauan maritim terintegrasi berbasis <em>edge-computing</em> berbiaya rendah untuk akuisisi sinyal Automatic Identification System (AIS), dekoding pesan, manajemen database, dan visualisasi spasial real-time yang dipublikasikan pada <strong>Jurnal ECOTIPE</strong> (Vol. 13 No. 2, Oktober 2026, hal. 233–242).</p>
+            <p style="margin-bottom:15px;">Arsitektur sistem menyatukan seluruh alur pemrosesan dari frekuensi radio (RF) hingga penyajian informasi maritim berbasis web interaktif:</p>
             <ul style="padding-left:20px; color:var(--text-muted); font-size:0.88rem; display:flex; flex-direction:column; gap:8px;">
-                <li>Mengurangi ketergantungan API pihak ketiga untuk pelacakan kapal pantai timur.</li>
-                <li>Integrasi pemrosesan sinyal radio dengan visualisasi pemetaan web modern.</li>
-                <li>Visualisasi lintasan kapal dengan interpolasi koordinat GPS presisi tinggi.</li>
+                <li><strong>Akuisisi Sinyal RF:</strong> Menangkap siaran AIS kanal VHF maritim (161.975 MHz & 162.025 MHz) menggunakan antena VHF dan penerima Software Defined Radio (RTL-SDR V4) dengan sampling rate 300 kHz dan gain 80 dB.</li>
+                <li><strong>Pipeline Dekoding Bahasa C (Edge Computing):</strong> Dijalankan langsung pada Raspberry Pi 3 Model B+ menggunakan algoritma berbasis C yang ringan, mencakup demodulasi GMSK, dekoding NRZI, ekstraksi frame, dan verifikasi integritas paket data CRC16.</li>
+                <li><strong>Manajemen Data & Web GIS:</strong> Menyimpan record kapal (MMSI, koordinat GPS, kecepatan SOG, arah COG, status navigasi) ke MariaDB secara otomatis dan menyajikannya via peta interaktif Leaflet.js dengan fitur penelusuran lintasan historis (<em>historical trajectory reconstruction</em>).</li>
+                <li><strong>Maritime Analytics Dashboard:</strong> Menyajikan statistik lalu lintas perairan secara komprehensif, mencakup komposisi armada kapal, distribusi kecepatan, serta negara asal kapal.</li>
+                <li><strong>Hasil Validasi Lapangan di Pelabuhan Tanjung Perak:</strong> Memproses 13.357 pesan AIS valid selama 60 menit pengamatan (rata-rata throughput 3,71 pesan/detik) dengan latensi <em>end-to-end</em> sangat rendah (0–2 detik) dan mendeteksi 114 armada kapal aktif.</li>
             </ul>
+            <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
+                <a href="https://ecotipe.ubb.ac.id/index.php/ecotipe/article/view/4612" target="_blank" class="btn btn-primary" style="padding:9px 16px; font-size:0.82rem; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                    <i class="fa-solid fa-book-open"></i> Baca Publikasi Jurnal ECOTIPE
+                </a>
+                <a href="https://doi.org/10.33019/jurnalecotipe.v13i2.4612" target="_blank" class="btn btn-secondary" style="padding:9px 16px; font-size:0.82rem; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.33019/jurnalecotipe.v13i2.4612
+                </a>
+                <a href="https://github.com/kelvin-rs/Web-Mapping-Data-Kapal-AIS" target="_blank" class="btn btn-secondary" style="padding:9px 16px; font-size:0.82rem; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                    <i class="fa-brands fa-github"></i> Repositori GitHub
+                </a>
+            </div>
         `
     },
     'e-proc': {
         title: 'E-Procurement SILOG Group Portal',
         client: 'CV. Javatekno Mitra Solusi',
         duration: 'Desember 2024 - Maret 2025',
-        tech: ['React.js', 'Next.js', 'TailwindCSS', 'RESTful API Integration'],
+        tech: ['React.js', 'Next.js', 'TailwindCSS'],
         images: ['assets/project/silog.png'],
         desc: `
             <p style="margin-bottom:15px;">Aplikasi E-Procurement berskala enterprise yang dirancang khusus untuk memotong birokrasi pengadaan barang logistik internal SILOG Group secara efisien dan transparan.</p>
@@ -191,15 +216,16 @@ const projectDatabase = {
         title: 'ESP32 Radio-Controlled Mobile Robot',
         client: 'Unit Kegiatan Mahasiswa E-Trans PENS',
         duration: 'Februari 2026 - Juni 2026',
-        tech: ['C++ (Arduino)', 'ESP32 Core', 'ESP-NOW Connection Protocol', 'Sensors & Actuators'],
-        images: ['assets/project/E-Trans.jpeg','assets/project/MobilRC.jpeg','assets/project/MobilRC1.jpeg'],
+        tech: ['ESP32', '3D Modeling (Chassis & Parts)', 'Motor Driver (H-Bridge)', 'C++ (Arduino)', 'Servo Actuator', 'ESP-NOW'],
+        images: ['assets/project/MobilRC1.jpeg', 'assets/project/MobilRC.jpeg', 'assets/project/E-Trans.jpeg'],
         desc: `
-            <p style="margin-bottom:15px;">Pengembangan robot mobil RC dengan media kendali khusus berbasis frekuensi nirkabel 2.4GHz. Proyek ini memprioritaskan latensi respons kemudi sekecil mungkin agar robot lincah bermanuver.</p>
-            <p style="margin-bottom:15px;">Menggunakan protokol nirkabel ESP-NOW yang tertanam pada mikrokontroler ESP32 ganda (satu sebagai pemancar remot kontrol dan satu di sasis robot) untuk bertukar data input analog joystick secara instan.</p>
+            <p style="margin-bottom:15px;">Pengembangan robot mobil Radio-Controlled (RC) yang memadukan perancangan mekanik model 3D dengan kendali nirkabel responsif berbasis mikrokontroler ESP32.</p>
+            <p style="margin-bottom:15px;">Fokus utama pengerjaan berpusat pada pembuatan 3D model sasis bodi dan struktur kemudi mobil, serta pemrograman ESP32 untuk mengontrol modul motor driver dan motor servo:</p>
             <ul style="padding-left:20px; color:var(--text-muted); font-size:0.88rem; display:flex; flex-direction:column; gap:8px;">
-                <li>Perakitan modul driver motor H-Bridge untuk akselerasi dan pengereman dinamis.</li>
-                <li>Penyusunan regulator catu daya step-down DC untuk mengamankan tegangan kerja chip.</li>
-                <li>Desain PCB kustom untuk meminimalkan kabel jumper sasis robot.</li>
+                <li><strong>Pembuatan 3D Model Mobil:</strong> Mendesain struktur 3D sasis, rangka dudukan baterai, struktur kemudi servo depan (warna merah), dan pelat penutup atas dengan potongan ventilasi logo agar presisi saat dirakit.</li>
+                <li><strong>Kontrol Motor Driver via ESP32:</strong> Memprogram mikrokontroler ESP32 untuk mengirimkan sinyal kendali PWM ke modul motor driver guna mengatur laju putaran motor DC roda belakang (akselerasi & pengereman) serta sudut kemudi servo depan.</li>
+                <li><strong>Transmisi Nirkabel Cepat (ESP-NOW):</strong> Memanfaatkan protokol nirkabel 2.4GHz ESP-NOW untuk komunikasi langsung antara unit pengendali remot dan mobil RC dengan latensi respons mendekati nol.</li>
+                <li><strong>Integrasi Daya & Pengkabelan:</strong> Menghubungkan baterai Li-ion dengan modul step-down DC regulator secara modular untuk menyuplai tegangan kerja yang stabil ke ESP32, motor driver, dan servo.</li>
             </ul>
         `
     },
@@ -235,20 +261,37 @@ const projectDatabase = {
             </ul>
         `
     },
-    'school-sys': {
-        title: 'E-Legalisir & Inventaris Laboratorium',
+    'e-legalisir': {
+        title: 'E-Legalisir Ijazah Digital SMKN 1 Jenangan',
         client: 'SMK Negeri 1 Jenangan Ponorogo',
         duration: 'Januari 2024 - Maret 2024',
-        tech: ['Laravel', 'MySQL', 'Bootstrap', 'Role-Based Authentication'],
-        images: ['assets/project/E-Legalisir.jpg','assets/project/Maintenance.jpg'],
+        tech: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'Digital Verification'],
+        images: ['assets/project/E-Legalisir.jpg'],
         desc: `
-            <p style="margin-bottom:15px;">Dua aplikasi manajemen terpisah untuk otomatisasi administrasi internal SMKN 1 Jenangan.</p>
-            <p style="margin-bottom:15px;"><strong>E-Legalisir Digital:</strong> Memotong waktu tunggu legalisasi ijazah alumni secara fisik dengan menyediakan sistem submit scan ijazah online yang diverifikasi langsung oleh operator sekolah dengan tanda tangan digital enkripsi unik.</p>
-            <p style="margin-bottom:15px;"><strong>Inventaris Laboratorium:</strong> Sistem pencatatan status peminjaman, jumlah aset, audit log, dan status kondisi peralatan laboratorium komputer.</p>
+            <p style="margin-bottom:15px;">Platform web pelayanan legalisasi dokumen ijazah dan transkrip nilai secara digital untuk mempermudah alumni SMK Negeri 1 Jenangan Ponorogo dalam permohonan legalisir tanpa harus datang langsung ke sekolah.</p>
+            <p style="margin-bottom:15px;">Sistem ini mengotomatiskan alur verifikasi berkas alumni dengan mencocokkan data NISN dan biodata siswa pada database sekolah, serta memungkinkan staf tata usaha memvalidasi berkas dan menerbitkan pengesahan secara aman.</p>
             <ul style="padding-left:20px; color:var(--text-muted); font-size:0.88rem; display:flex; flex-direction:column; gap:8px;">
-                <li>Autentikasi role berlapis (Alumni, Guru, Staff Admin, Kepala Lab).</li>
-                <li>Export data rekapitulasi inventaris otomatis ke format Excel/PDF.</li>
-                <li>Notifikasi email pengingat keterlambatan pengembalian barang pinjaman.</li>
+                <li>Formulir pengajuan online dengan verifikasi identitas alumni berbasis NISN dan nama orang tua.</li>
+                <li>Panel dashboard manajemen berkas masuk bagi staf administrasi dan operator sekolah.</li>
+                <li>Pelacakan progres pengesahan dokumen secara transparan dan efisien.</li>
+                <li>Penyimpanan arsip digital dokumen legalisir terpusat pada database MySQL.</li>
+            </ul>
+        `
+    },
+    'e-inventory': {
+        title: 'Sistem Informasi Inventaris Laboratorium SMKN 1 Jenangan',
+        client: 'SMK Negeri 1 Jenangan Ponorogo',
+        duration: 'Januari 2024 - Maret 2024',
+        tech: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'Chart.js'],
+        images: ['assets/project/Maintenance.jpg'],
+        desc: `
+            <p style="margin-bottom:15px;">Sistem informasi manajemen inventaris dan aset fasilitas laboratorium berbasis web yang dikembangkan khusus untuk SMKN 1 Jenangan Ponorogo.</p>
+            <p style="margin-bottom:15px;">Aplikasi ini mendigitalisasi pencatatan sarana dan prasarana di seluruh laboratorium kejuruan, memantau kondisi alat, memonitor mutasi barang antar ruangan, serta menyajikan grafik kondisi aset secara real-time bagi pengelola lab.</p>
+            <ul style="padding-left:20px; color:var(--text-muted); font-size:0.88rem; display:flex; flex-direction:column; gap:8px;">
+                <li>Dashboard analitik visual grafik kondisi kelayakan barang (baik, rusak ringan, rusak berat).</li>
+                <li>Pengelolaan data master terstruktur meliputi kategori, ruangan lab, jurusan, tipe barang, dan mutasi barang.</li>
+                <li>Fitur audit log pencatatan keluar-masuk serta mutasi aset fasilitas laboratorium.</li>
+                <li>Ekspor rekapitulasi data inventaris untuk pelaporan berkala inventaris sekolah.</li>
             </ul>
         `
     },
@@ -264,14 +307,26 @@ const projectDatabase = {
         `
     },
     'kmipn': {
-        title: 'KMIPN VIII - Smart IoT Incubator',
-        client: 'Politeknik Elektronika Negeri Surabaya',
-        duration: 'Sedang Berlangsung (2026)',
-        tech: ['IoT Core', 'AI Edge', 'Raspberry Pi', 'React Native', 'MQTT'],
-        images: ['assets/project/VIREON-KMIPN2026.jpeg','assets/project/VIREON1-KMIPN2026.jpeg'],
+        title: 'VIREON: AI Mangrove Waste Classifier & Mitigation Platform',
+        client: 'KMIPN VIII 2026 - Kategori Hackathon (Tim KatanyaOKE)',
+        duration: 'Juli 2026',
+        tech: ['Flutter', 'YOLO (Object Detection)', 'CNN (Deep Learning)', 'FastAPI', 'Nest.js', 'Supabase', 'Decision Support System (DSS)'],
+        images: [
+            'assets/project/VIREON-KMIPN2026.jpeg',
+            'assets/project/VIREON1-KMIPN2026.jpeg',
+            'assets/project/VIREON3.png',
+            'assets/project/VIREON4.png'
+        ],
         desc: `
-            <p style="margin-bottom:15px;">Proyek pengembangan inkubator pintar untuk budidaya tanaman presisi tinggi yang didaftarkan pada cabang lomba Piranti Cerdas KMIPN VIII 2026.</p>
-            <p style="margin-bottom:15px;">Menggunakan AI Edge untuk pendeteksian penyakit daun tanaman secara lokal dengan TensorFlow Lite pada Raspberry Pi, dan mengirim notifikasi alert ke aplikasi mobile via protokol MQTT.</p>
+            <p style="margin-bottom:15px;">Inovasi platform <em>citizen science</em> berbasis kecerdasan buatan (AI) yang digagas oleh Tim KatanyaOKE pada cabang lomba <strong>Hackathon KMIPN VIII 2026</strong> untuk menanggulangi ancaman degradasi ekologis di kawasan mangrove pesisir timur Surabaya (Wonorejo & Muara Kali Jagir).</p>
+            <p style="margin-bottom:15px;">Platform ini mengintegrasikan aplikasi mobile cross-platform berbasis Flutter dengan arsitektur microservices cerdas:</p>
+            <ul style="padding-left:20px; color:var(--text-muted); font-size:0.88rem; display:flex; flex-direction:column; gap:8px;">
+                <li><strong>Deteksi Limbah Padat (YOLO):</strong> Mengidentifikasi dan mengestimasi keparahan makrodebris (plastik, botol, styrofoam, ban) yang menjerat sistem perakaran nafas mangrove secara real-time melalui kamera smartphone.</li>
+                <li><strong>Klasifikasi Limbah Cair (CNN):</strong> Menganalisis anomali visual pada permukaan perairan seperti busa surfaktan dan perubahan warna akibat pembuangan limbah industri muara sungai.</li>
+                <li><strong>Decision Support System (DSS):</strong> Mengolah data temuan jenis limbah dan titik koordinat GPS untuk mengklasifikasikan tingkat bahaya (Rendah, Sedang, Tinggi) serta menghasilkan rekomendasi tindakan mitigasi fisik yang aman bagi perakaran mangrove.</li>
+                <li><strong>Arsitektur Backend & Cloud:</strong> Memadukan Nest.js untuk manajemen API, FastAPI untuk inferensi deep learning yang responsif, serta Supabase untuk autentikasi, penyimpanan citra (object storage), dan pemetaan geospasial limbah.</li>
+            </ul>
+            <p style="margin-top:15px; font-size:0.84rem; color:var(--text-muted); font-style:italic;">*Catatan: Karya ini merupakan proposal gagasan inovasi teknologi informatika pada ajang kompetisi nasional KMIPN VIII 2026 (Tahap Seleksi Proposal).*</p>
         `
     },
     'face-rec': {
@@ -490,19 +545,19 @@ window.handleFormSubmit = handleFormSubmit;
 const timelineDatabase = {
     'exp-abmas': {
         title: 'Pengabdian Masyarakat (Prodi Telekomunikasi)',
-        institution: 'Program Studi Teknik Telekomunikasi PENS',
+        institution: 'Program Studi D4 Teknik Telekomunikasi PENS',
         role: 'Full Stack Web Developer',
         duration: 'April 2026 – Sekarang',
-        images: ['assets/project/Pengabdian Masyarakat.jpeg'],
-        desc: 'Membangun portal pemasaran web terpadu untuk Kelompok Tani (Poktan) Banyu Urip guna mempermudah akses pemasaran produk dan memperluas distribusi secara digital. Sistem ini memudahkan petani mengelola stok produk pertanian, memproses pesanan pembeli secara digital, dan meningkatkan jangkauan pemasaran ke luar daerah.'
+        images: ['assets/project/Pengabdian Masyarakat.jpeg', 'assets/project/Pengmas-beranda.png', 'assets/project/Pengmas-Katalog.png', 'assets/project/Pengmas-Tentang kami.png', 'assets/project/Pengmas-Budidaya.png'],
+        desc: 'Membangun website profil dan platform pemasaran digital terpadu untuk Kelompok Tani (Poktan) Banyu Urip guna mempermudah akses pemasaran produk unggulan budidaya Melon Honey serta memperluas jangkauan distribusi secara digital menggunakan integrasi database Supabase.'
     },
     'exp-penelitian': {
-        title: 'Penelitian Lokal (Sistem Pemetaan Kapal AIS)',
+        title: 'Penelitian Riset Dosen PENS (Jurnal ECOTIPE)',
         institution: 'Laboratorium Telekomunikasi PENS',
-        role: 'Embedded Systems & Web Developer',
+        role: 'Embedded SDR & Web GIS Developer',
         duration: 'Februari 2026 – Sekarang',
-        images: ['assets/project/Penelitian-Lokal.jpeg'],
-        desc: 'Mengembangkan infrastruktur website pemetaan data transmisi Automatic Identification System (AIS) berbasis RTL-SDR receiver untuk menangkap koordinat sinyal kapal laut. Data ditangkap, didekode secara real-time melalui server Python, dan disalurkan melalui WebSockets untuk dipetakan secara dinamis pada Leaflet JS.'
+        images: ['assets/project/Penelitian-Lokal.jpeg', 'assets/project/AIS4.jpeg', 'assets/project/AIS.jpeg', 'assets/project/AIS3.jpeg'],
+        desc: 'Mengembangkan sistem edge-computing penerima sinyal maritim Automatic Identification System (AIS) berbasis RTL-SDR V4 dan Raspberry Pi dengan algoritma dekoding bahasa C (GMSK/NRZI/CRC16), manajemen database MariaDB, serta visualisasi web real-time dan analisis pergerakan kapal berbasis Leaflet.js yang telah diterbitkan pada Jurnal ECOTIPE (Vol. 13 No. 2, Oktober 2026).'
     },
     'exp-earo': {
         title: 'Programming Division (EARO UAV Team)',
@@ -515,7 +570,7 @@ const timelineDatabase = {
     'exp-dies-natalis': {
         title: 'Panitia Dies Natalis PENS ke-37',
         institution: 'Politeknik Elektronika Negeri Surabaya (PENS)',
-        role: 'Staff Operasional',
+        role: 'Staff Operasional (Perkab)',
         duration: 'Agustus 2025',
         images: ['assets/Sertifikat/Dies Natalis PENS-37.png'],
         desc: 'Bertanggung jawab atas pengelolaan operasional perlengkapan, logistik, kebutuhan peralatan acara, dan persiapan teknis panggung untuk mendukung kelancaran seluruh rangkaian kegiatan Dies Natalis PENS ke-37.'
@@ -523,9 +578,9 @@ const timelineDatabase = {
     'exp-fpc': {
         title: 'Panitia Final Project Competition (FPC)',
         institution: 'Politeknik Elektronika Negeri Surabaya (PENS)',
-        role: 'Staff Operasional',
+        role: 'Staff Operasional (Perkab)',
         duration: 'Juli 2025',
-        images: ['assets/project/fpc.jpeg'],
+        images: ['assets/project/FPC.jpeg'],
         desc: 'Bertanggung jawab dalam penyiapan sarana, perlengkapan stand kompetisi, pengelolaan tata letak ruang pameran, serta distribusi logistik bagi para peserta dan dewan juri Final Project Competition mahasiswa akhir PENS.'
     },
     'exp-etrans': {
@@ -533,15 +588,15 @@ const timelineDatabase = {
         institution: 'UKM E-Trans PENS',
         role: 'Robotics & IoT Engineer',
         duration: 'Februari 2026 – Juni 2026',
-        images: ['assets/project/E-Trans.jpeg'],
-        desc: 'Merancang dan mengimplementasikan modul kendali nirkabel serta perakitan sasis/mekanik untuk Robot Mobil RC (Radio Controlled) dengan latensi kontrol minimal berbasis ESP32. Menggunakan protokol komunikasi nirkabel ESP-NOW yang tertanam langsung pada mikrokontroler untuk pergerakan motor DC dan kemudi servo secara instan.'
+        images: ['assets/project/MobilRC1.jpeg', 'assets/project/MobilRC.jpeg', 'assets/project/E-Trans.jpeg'],
+        desc: 'Merancang 3D model sasis bodi dan struktur kemudi mobil RC, serta memprogram mikrokontroler ESP32 untuk mengontrol modul motor driver penggerak roda DC dan motor servo kemudi via transmisi nirkabel ESP-NOW berlatensi rendah.'
     },
     'exp-roboholic': {
         title: 'Hardware & Control Programmer',
         institution: 'UKM Roboholic PENS',
         role: 'Hardware & Control Programmer',
         duration: 'Februari 2025 – Juni 2025',
-        images: ['assets/project/roboholic.jpeg'],
+        images: ['assets/project/Roboholic.jpeg'],
         desc: 'Mendesain algoritma PID controller presisi tinggi untuk Robot Line Follower otomatis, meningkatkan akurasi pembacaan sensor photodioda analog, dan mempercepat respons pergerakan motor DC pada mikrokontroler STM32.'
     },
     'exp-javatekno': {
@@ -549,31 +604,31 @@ const timelineDatabase = {
         institution: 'CV. Javatekno Mitra Solusi',
         role: 'Frontend Web Developer (Internship)',
         duration: 'Desember 2024 – Maret 2025',
-        images: ['assets/project/silog.png'],
+        images: ['assets/project/Silog.png'],
         desc: 'Mengembangkan arsitektur antarmuka (Frontend) untuk aplikasi web E-Procurement berskala enterprise untuk SILOG Group demi efisiensi pengadaan barang secara digital menggunakan React.js, Next.js, dan TailwindCSS.'
     },
     'exp-smk': {
-        title: 'Full Stack Developer (E-Legalisir & Inventaris)',
+        title: 'Full Stack Developer (E-Legalisir & Inventaris Lab)',
         institution: 'SMKN 1 Jenangan',
         role: 'Full Stack Developer',
         duration: 'Januari 2024 – Maret 2024',
-        images: ['assets/project/E-Legalisir.jpg'],
-        desc: 'Membangun sistem internal "E-Legalisir Digital" untuk mempermudah alumni dalam legalisasi berkas secara online, serta merancang platform "Sistem Manajemen Inventaris Barang Aset" untuk efisiensi audit inventaris di setiap laboratorium sekolah.'
+        images: ['assets/project/E-Legalisir.jpg', 'assets/project/Maintenance.jpg'],
+        desc: 'Membangun platform sistem "E-Legalisir Digital" untuk memfasilitasi legalisasi ijazah online bagi alumni, serta mengembangkan "Sistem Informasi Inventaris Laboratorium" berbasis web guna mendata fasilitas sarana prasarana, mutasi alat, dan grafik kondisi kelayakan inventaris laboratorium SMKN 1 Jenangan.'
     },
     'exp-promedia': {
         title: 'Mobile & Web Developer (Internship)',
         institution: 'PT. Promedia Citra Informatindo',
         role: 'Mobile & Web Developer (Internship)',
         duration: 'Januari 2023 – Juni 2023',
-        images: ['assets/project/KMIPN-V.png'],
-        desc: 'Mengembangkan dan meluncurkan sistem E-Commerce terintegrasi untuk UMKM Kota Batu dalam bentuk website (Laravel/Yii2) & aplikasi mobile konsumen (React Native). Berkontribusi aktif pula pada tim developer utama dalam membangun website resmi kompetisi KMIPN-V.'
+        images: [],
+        desc: 'Mengembangkan sistem E-Commerce terintegrasi untuk UMKM Kota Batu dalam bentuk website (Laravel/Yii2) & aplikasi mobile konsumen (React Native). Berkontribusi aktif pada perancangan antarmuka pengguna, autentikasi API JWT, dan penanganan data katalog produk.'
     },
     'exp-gandini': {
         title: 'Active Member & Community Speaker',
         institution: 'Gandini Dev Community SMKN 1 JENANGAN',
         role: 'Active Member & Speaker',
         duration: 'September 2021 – Februari 2024',
-        images: [''],
+        images: [],
         desc: 'Menjadi partisipan aktif komunitas sejak 2021 dalam diskusi coding dan project sharing, serta naik menjadi Pemateri Komunitas (2023-2024) membawakan materi seputar pemrograman web dasar bagi anggota baru.'
     },
     'edu-pens': {
@@ -582,7 +637,7 @@ const timelineDatabase = {
         role: 'D4 Teknik Telekomunikasi',
         duration: '2024 - Sekarang',
         images: ['assets/resource/PENS.jpg'],
-        desc: 'Mendalami rekayasa sistem transmisi nirkabel, jaringan komputer, pemrosesan sinyal digital, mikrokontroler canggih, radio telecommunication (RF), serta integrasi IoT. Aktif berpartisipasi dalam UKM Robotika & Riset penelitian dosen.'
+        desc: 'Mendalami rekayasa sistem transmisi nirkabel, jaringan komputer, pemrosesan sinyal digital, mikrokontroler canggih, radio telecommunication (RF), serta integrasi IoT. Aktif berpartisipasi dalam riset penelitian dosen dan publikasi ilmiah.'
     },
     'edu-smk': {
         title: 'Rekayasa Perangkat Lunak (RPL)',
@@ -590,7 +645,7 @@ const timelineDatabase = {
         role: 'Rekayasa Perangkat Lunak (RPL)',
         duration: '2021 - 2024',
         images: ['assets/resource/SMKN1JENANGAN.jpeg'],
-        desc: 'Mempelajari dasar-dasar pemrograman algoritma, basis data (MySQL), pemrograman orientasi objek (OOP), pemrograman web statis/dinamis, pengembangan aplikasi desktop, dan dasar-dasar embedded systems sederhana.'
+        desc: 'Mempelajari dasar-dasar rekayasa perangkat lunak, perancangan basis data relasional (MySQL), pemrograman berorientasi objek (OOP), pemrograman web statis/dinamis, pengembangan aplikasi desktop, dan pengenalan embedded systems.'
     }
 };
 
@@ -610,21 +665,22 @@ function openTimelineModal(itemId) {
     currentCarouselIndex = 0;
 
     let carouselHTML = '';
-    if (data.images && data.images.length > 0) {
+    const validImages = (data.images || []).filter(img => img && typeof img === 'string' && img.trim() !== '');
+    if (validImages.length > 0) {
         carouselHTML = `
             <div class="modal-carousel" style="margin-bottom: 15px;">
                 <div class="modal-carousel-inner">
-                    ${data.images.map((img, idx) => `
+                    ${validImages.map((img, idx) => `
                         <div class="modal-carousel-item ${idx === 0 ? 'active' : ''}">
                             <img src="${img}" alt="Activity image ${idx + 1}" onerror="this.src='https://via.placeholder.com/800x500?text=Activity+Image'">
                         </div>
                     `).join('')}
                 </div>
-                ${data.images.length > 1 ? `
+                ${validImages.length > 1 ? `
                     <button class="carousel-control prev" onclick="moveModalCarousel(-1)"><i class="fa-solid fa-chevron-left"></i></button>
                     <button class="carousel-control next" onclick="moveModalCarousel(1)"><i class="fa-solid fa-chevron-right"></i></button>
                     <div class="carousel-indicators">
-                        ${data.images.map((_, idx) => `
+                        ${validImages.map((_, idx) => `
                             <span class="indicator-dot ${idx === 0 ? 'active' : ''}" onclick="setModalCarousel(${idx})"></span>
                         `).join('')}
                     </div>
